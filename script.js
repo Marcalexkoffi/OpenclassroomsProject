@@ -1,8 +1,4 @@
-let listeMots  = ["Cachalot","Pétunia","Serviette"] 
-let listePhrases = ["Pas de panique !","La vie, l’univers et le reste","Merci pour le poisson"]
-let i 
-let score = 0
-let reponse = prompt("Voulez-vous la liste de mots ou la liste de phrase ?")
+
 while (reponse !== "mots" && reponse !== "phrases"  )
     {
         reponse = prompt("Voulez-vous la liste de mots ou la liste de phrases ?")
@@ -19,7 +15,7 @@ switch (reponse){
                 console.log("Le mot est incorrect")
             }
         }
-        console.log("Votre Score est : ",score)
+        console.log("Votre Score est :",score,"sur",listeMots.length)
     break
     case "phrases" : 
         for (i=0;i<3;i++){
